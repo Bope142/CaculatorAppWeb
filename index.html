@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+  <meta name="Description" CONTENT="Author: Norbert Yemuang Bope">
+  <meta name="googlebot" content="notranslate" />
+    <link rel="stylesheet" href="./calculatrice.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="./assets/icons/icon-96x96.png">
+    <meta name="theme-color" content="#fafafa"/>
+    <meta name="apple-mobile-web-app-status-bar" content="white">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Frontend Challenge | Calculator app</title>
+</head>
+<body>
+    <main class="container">
+      <div class="en-tete">
+        <h1>calc</h1>
+        <div class="btn-theme">
+          <h2>THEME</h2>
+          <div class="les-themes">
+            <span>1 2 3</span>
+            <div class="radio">
+              <span id="checktheme1">
+                </span>
+              <span id="checktheme2">
+                </span>
+              <span id="checktheme3">
+                </span>
+              <span class="bulles"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="display">
+      <input type="text" id="afficheur" readonly="readonly"   value="0">
+      </div>
+      <div class="les-corps">
+        <div class="btn">
+        <input type="button" class="les-boutons" value="7">
+        <input type="button" class="les-boutons" value="8">
+        <input type="button" class="les-boutons" value="9">
+        <input type="button" class="btn-function" value="DEL" id="delete">
+        <input type="button" class="les-boutons" value="4">
+        <input type="button" class="les-boutons" value="5">
+        <input type="button" class="les-boutons" value="6">
+        <input type="button" class="les-boutons-operateur" value="+">
+        <input type="button" class="les-boutons" value="1">
+        <input type="button" class="les-boutons" value="2">
+        <input type="button" class="les-boutons" value="3">
+        <input type="button" class="les-boutons-operateur"  value="-">
+        <input type="button" class="les-boutons-virgule" id="virgule" value=".">
+        <input type="button" class="les-boutons" value="0">
+        <input type="button" class="les-boutons-operateur" value="/">
+        <input type="button" class="les-boutons-operateur" value="*">
+        </div>
+        <div class="btn-footer">
+          <input type="button" class="btn-function" value="RESET" id="reset">
+          <input type="button" class="btn-function" value="=" id="reponse">
+        </div>
+      </div>
+    </main>
+<script src="./js/app.js"></script>
+<script src="./js/theme-app.js"></script>
+<script src="./js/calculatrice.js"></script>
+</body>
+</html>
